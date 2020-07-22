@@ -5,7 +5,8 @@ body{
 }
 
 .header-top {
-    background: #D8D9DE;
+    /* background: #D8D9DE; */
+    background: white;
     padding-bottom: 80px;
 }
 .banner-image img {
@@ -45,18 +46,23 @@ h1.banner-title {
   width: 100%;
 
 }
-.bg-blue ,.darkblue-blue ,.purple-bg ,.black-bg ,.green-bg {
+.bg-blue ,.darkblue-blue ,.purple-bg ,.black-bg ,.final-bg, .white-bg {
   /*  padding:200px 0; */
 }
 
 .bg-blue {
-  background:#1C38F0;
+  background:#0B0B22;
   color:#fff;
 
 }
 .darkblue-blue{
   background:#3B3B53;
 }
+
+.white-bg {
+  background: white;
+}
+
 .purple-bg{
   background:#C787A2;
 }
@@ -64,8 +70,8 @@ h1.banner-title {
   background: #191A1D;
 
 }
-.green-bg {
-  background: #1D9812;
+.final-bg {
+  background: #0B0B22;
 
 }
 h2.section-title {
@@ -125,13 +131,13 @@ section.blue-bg-section  .col-md-4 {
 }
 .svg-scale-wrapper {
     font-size: 14vw;
-    color: rgba(255, 255, 255,0.32);
+    color: whitesmoke;
     font-weight: 900;
     line-height: 14vw;
 }
 
 
-section.green-bg-section h5.title {
+section.final-bg-section h5.title {
     font-size: 38px;
     font-weight: 900;
 }
@@ -140,7 +146,8 @@ section.green-bg-section h5.title {
     padding: 20px 65px;
     border-radius: 5px;
     margin-top: 20px;
-    color:#1D9812;
+    color:#0B0B22;
+    background-color: whitesmoke !important;
 }
 @keyframes animation_3_1 {
   0% {transform: matrix(1,0,0,1,0,0); opacity: 1; animation-timing-function: ease-in-out}
@@ -178,7 +185,7 @@ section.green-bg-section h5.title {
 
 @media(min-width:768px){
 
-  .bg-blue>div, .darkblue-blue>div ,.purple-bg>div ,.black-bg>div ,.green-bg>div {
+  .bg-blue>div, .darkblue-blue>div ,.purple-bg>div ,.black-bg>div ,.final-bg>div, .white-bg>div {
        position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -222,7 +229,7 @@ section.green-bg-section h5.title {
       max-width: 242px;
       width: 100%;
 }
-  .bg-blue ,.darkblue-blue ,.purple-bg ,.black-bg ,.green-bg {
+  .bg-blue ,.darkblue-blue ,.purple-bg ,.black-bg ,.final-bg {
    padding:100px 0; 
 }
 .image-icon-wrapper {
@@ -285,7 +292,7 @@ section.blue-bg-section p {
     order: 2;
 }
 
-.green-bg .text-center {
+.final-bg .text-center {
   text-align: left !important;
 }
 .svg-scale-wrapper {
@@ -323,3 +330,18 @@ h1.banner-title {
  visibility:visible;
 }
 */
+
+.fabletic-content h2{
+    color: #0B0B22 !important;
+}
+
+.fabletic-content p{
+    color: #0B0B22 !important;
+}
+
+.force-repaint-content ul{
+    color: #0B0B22 !important;
+    border-left: 1px solid #0B0B22 !important;
+}
+
+
