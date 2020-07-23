@@ -411,11 +411,26 @@ h1.banner-title {
     }
 
     .scroll-container section {
-        margin-bottom: 10%;
+      
     }
 
     .force-repaint-content {
         margin-bottom: 5%;
     }
+
+    .company_icons-desktop {
+        display:none !important;
+    }
+
+    .company_icons-mobile {
+        display: block !important;
+    }
 }
 
+.company_icons-desktop {
+    display: block;
+}
+
+.company_icons-mobile {
+    display: none;
+}
