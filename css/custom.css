@@ -354,3 +354,49 @@ h1.banner-title {
     flex-direction: row;
     align-items: center;
 }
+
+.text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.force-repaint-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-ignite-text {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.quote-style {
+    font-size: 1rem
+}
+
+.quote-ignite-author {
+    color: grey;
+    font-size: 1rem;
+}
+
+.quote-ignite-author-status {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.invisible {
+    visibility: none;
+}
+
+.quotation-marks {
+    
+    width: 1.4rem;
+}
+
+.reverse {
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
