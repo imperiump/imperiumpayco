@@ -274,7 +274,7 @@ section.blue-bg-section p {
     margin-bottom: 30px;
 }
 .image-width-text img {
-    padding: 0 50px;
+    /* padding: 0 50px; */
 }
 .image-width-text ul {
     border-left: 0;
@@ -400,3 +400,22 @@ h1.banner-title {
     -webkit-transform: scale(-1, -1);
     transform: scale(-1, -1);
 }
+
+.igniteImg {
+    
+}
+
+@media (max-width: 767px) {
+    .image-width-text img {
+        margin-top: 10%;
+    }
+
+    .scroll-container section {
+        margin-bottom: 10%;
+    }
+
+    .force-repaint-content {
+        margin-bottom: 5%;
+    }
+}
+
