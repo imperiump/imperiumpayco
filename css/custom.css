@@ -436,9 +436,16 @@ h1.banner-title {
 }
 
 .main-content-ignite {
-    margin: 10% 5%;
+   margin: 0 5%;
+   margin-bottom: 10%;
 }
 
 .force-repaint-content {
     margin-bottom: 2rem;
+}
+
+.company-icons_container-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
