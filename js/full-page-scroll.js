@@ -12,8 +12,8 @@
             currentPosition: 0,
             displayDots: typeof params.displayDots != "undefined" ? params.displayDots : true,
             dotsPosition: params.dotsPosition || "left",
-            move:1,
-            change:0
+            move: 1,
+            change: 0
         };
         this.defaults = defaults;
         this.init();
@@ -76,8 +76,8 @@
         var _self = this;
         this.mouseWheelAndKey = function (event) {
             if (event.deltaY > 0 || event.keyCode == 40) {
-       
-                if(_self.defaults.currentPosition == 1 && _self.defaults.change  == 0 ) {
+
+                if (_self.defaults.currentPosition == 1 && _self.defaults.change == 0) {
                     $('.user-growth').addClass('hide-text-by-animate').removeClass('display-text-by-animate');
                     $('.team-content').addClass('display-text-by-animate').removeClass('hide-text-by-animate');
                     _self.defaults.change = 1;
@@ -92,7 +92,7 @@
                 _self.changeCurrentPosition(_self.defaults.currentPosition);
             } else if (event.deltaY < 0 || event.keyCode == 38) {
 
-                if(_self.defaults.currentPosition == 1 && _self.defaults.change  == 0 ) {
+                if (_self.defaults.currentPosition == 1 && _self.defaults.change == 0) {
                     $('.team-content').addClass('hide-text-by-animate').removeClass('display-text-by-animate');
                     $('.user-growth').addClass('display-text-by-animate').removeClass('hide-text-by-animate');
                     _self.defaults.change = 1;
@@ -110,10 +110,10 @@
             mTouchStart = parseInt(event.changedTouches[0].clientY);
             mTouchEnd = 0;
         };
-      this.touchEnd = function (event) {
+        this.touchEnd = function (event) {
             mTouchEnd = parseInt(event.changedTouches[0].clientY);
             if (mTouchEnd - mTouchStart > 100 || mTouchStart - mTouchEnd > 100) {
-                alert('touch event start');
+
                 if (mTouchEnd > mTouchStart) {
                     _self.defaults.currentPosition--;
                 } else {
@@ -137,28 +137,28 @@
                         let previsousPos = _self.defaults.currentPosition;
                         _self.defaults.currentPosition = anchor;
 
-                        console.log(previsousPos,_self.defaults.change, _self.defaults.move )
+                        console.log(previsousPos, _self.defaults.change, _self.defaults.move)
 
                         ///// New Code //////////////
-                      /*  if(previsousPos == 2 && _self.defaults.change  == 0 && _self.defaults.move == 1) {
-                            $('.user-growth').addClass('hide-text-by-animate').removeClass('display-text-by-animate');
-                            $('.team-content').addClass('display-text-by-animate').removeClass('hide-text-by-animate');
-                            _self.changeCurrentPosition(previsousPos);
-                            _self.defaults.change = 1;
-                        } else if(previsousPos == 2 && _self.defaults.change  == 0 && _self.defaults.move == 0) {
-                            $('.team-content').addClass('hide-text-by-animate').removeClass('display-text-by-animate');
-                            $('.user-growth').addClass('display-text-by-animate').removeClass('hide-text-by-animate');
-                            _self.defaults.change = 1;
-                        } else {
-
-                            if(previsousPos == 3 && previsousPos == 1) {
-                                $('.team-content').removeClass('hide-text-by-animate').removeClass('display-text-by-animate');
-                                $('.user-growth').removeClass('display-text-by-animate').removeClass('hide-text-by-animate');
-                                _self.defaults.change = 0;
-                            }
-                            _self.animateScroll();
-
-                        }*/
+                        /*  if(previsousPos == 2 && _self.defaults.change  == 0 && _self.defaults.move == 1) {
+                              $('.user-growth').addClass('hide-text-by-animate').removeClass('display-text-by-animate');
+                              $('.team-content').addClass('display-text-by-animate').removeClass('hide-text-by-animate');
+                              _self.changeCurrentPosition(previsousPos);
+                              _self.defaults.change = 1;
+                          } else if(previsousPos == 2 && _self.defaults.change  == 0 && _self.defaults.move == 0) {
+                              $('.team-content').addClass('hide-text-by-animate').removeClass('display-text-by-animate');
+                              $('.user-growth').addClass('display-text-by-animate').removeClass('hide-text-by-animate');
+                              _self.defaults.change = 1;
+                          } else {
+  
+                              if(previsousPos == 3 && previsousPos == 1) {
+                                  $('.team-content').removeClass('hide-text-by-animate').removeClass('display-text-by-animate');
+                                  $('.user-growth').removeClass('display-text-by-animate').removeClass('hide-text-by-animate');
+                                  _self.defaults.change = 0;
+                              }
+                              _self.animateScroll();
+  
+                          }*/
                         _self.animateScroll();
                     }
                 }
