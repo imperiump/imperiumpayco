@@ -429,6 +429,13 @@ h1.banner-title {
     .company_icons-mobile {
         display: block !important;
     }
+
+    .scroll-container section {
+        height: auto;
+    }
+    .header-top {
+        height: 115% !important;
+    }
 }
 
 .company_icons-desktop {
@@ -470,3 +477,5 @@ h1.banner-title {
 .col-md-4 .title {
     font-size: 18px;
 }
+
+
