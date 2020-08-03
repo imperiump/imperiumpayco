@@ -129,7 +129,7 @@ section.blue-bg-section  .col-md-4 {
 }
 
 .banner-section {
-    padding-top: 75px;
+    padding-top: 50px;
 }
 .svg-scale-wrapper {
     font-size: 14vw;
@@ -228,7 +228,7 @@ section.final-bg-section h5.title {
     height: 100%;
 }
     .banner-image img {
-      max-width: 242px;
+      max-width: 400px;
       width: 100%;
 }
   .bg-blue ,.darkblue-blue ,.purple-bg ,.black-bg ,.final-bg {
@@ -465,4 +465,8 @@ h1.banner-title {
     .main-logo {
         font-size: 2rem;
     }
+}
+
+.col-md-4 .title {
+    font-size: 18px;
 }
